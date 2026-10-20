@@ -1,0 +1,493 @@
+{
+  "_readme": "This file drives the whole site. Edit text here, not the layout. Fields marked with a value starting 'TODO:' need Anthony to fill or confirm them before launch. Do not invent metrics, clients, or dates. The public contact email ajnthony87@gmail.com is confirmed. Do not add a phone number to this file; the repository is public.",
+  "meta": {
+    "siteName": "Anthony Jones",
+    "legalName": "Anthony Jaamal Jones",
+    "domain": "anthonyjjones.com",
+    "url": "https://anthonyjjones.com",
+    "title": "Anthony Jones — Contract Software Developer & Creator",
+    "description": "I design, build, and ship software: web apps, iOS apps, payments, and the AI automation that runs behind them. Available for contract work from Valdosta, GA.",
+    "ogImage": "TODO: add an Open Graph image (1200x630) to /assets and set its path here",
+    "locality": "Valdosta",
+    "region": "GA",
+    "country": "US",
+    "jobTitle": "Software Developer (contract) & Creator",
+    "sameAs": [
+      "https://github.com/Awkward8787",
+      "https://www.instagram.com/awkwardjones"
+    ],
+    "linkedin": "TODO: add LinkedIn URL if you want it linked",
+    "jsonLdType": "Person"
+  },
+  "theme": {
+    "default": "dark",
+    "allowToggle": true,
+    "accent": "#5B8CFF",
+    "accentAltNote": "Amber #E8653B is an alternative accent pulled from the AwkBeats brand; pick one.",
+    "dark": {
+      "bg": "#0B0C0E",
+      "surface": "#15171B",
+      "text": "#F4F5F7",
+      "muted": "#A2A8B3",
+      "border": "#23262C"
+    },
+    "light": {
+      "bg": "#FBFBFC",
+      "surface": "#FFFFFF",
+      "text": "#14161A",
+      "muted": "#55606E",
+      "border": "#E4E7EC"
+    },
+    "fonts": {
+      "sans": "Inter, system-ui, sans-serif",
+      "mono": "'JetBrains Mono', ui-monospace, monospace"
+    }
+  },
+  "hero": {
+    "eyebrow": "Valdosta, GA · available for contract work",
+    "name": "Anthony Jones",
+    "headline": "I design, build, and ship software: web, mobile, and the AI that runs behind it.",
+    "subhead": "Self-directed developer and creator. I take an idea to a working product: the front end, the back end, the payments, the brand, and the automation that keeps it running. I prefer contract work and I'm open to the right full-time role.",
+    "proofChips": [
+      "iPhone app in App Store review",
+      "50+ projects shipped",
+      "Square + StoreKit payments",
+      "Runs ~50 AI agents"
+    ],
+    "primaryCta": { "label": "Hire me for contract work", "href": "#contact" },
+    "secondaryCta": { "label": "See the work", "href": "#work" },
+    "resumeCta": { "label": "Download résumé", "href": "/resume.pdf" },
+    "monogram": "AJ",
+    "photo": "TODO: add a professional headshot to /assets and set its path here (optional; initials shown until then)"
+  },
+  "search": {
+    "placeholder": "Search projects, skills, and experience…",
+    "hint": "Press / or Cmd-K to search",
+    "emptyState": "No matches. Try a tag like iOS, payments, or AI."
+  },
+  "filters": {
+    "label": "Filter by",
+    "tags": [
+      "iOS / Mobile",
+      "Full-stack web",
+      "Payments",
+      "AI / Automation",
+      "Brand / Media",
+      "Static sites & hosting",
+      "Developer tools",
+      "Data / Backend"
+    ]
+  },
+  "services": {
+    "sectionIndex": "01",
+    "title": "What I can build for you",
+    "intro": "Contract engagements, scoped to what you actually need. I work solo end-to-end or plug into your team.",
+    "items": [
+      {
+        "name": "Full-stack web apps",
+        "body": "React/TypeScript front ends with Node, Express, or FastAPI back ends and Supabase, Postgres, or Firebase behind them. Auth, dashboards, admin tools, exports.",
+        "tags": ["Full-stack web", "Data / Backend"]
+      },
+      {
+        "name": "iOS & mobile apps",
+        "body": "React Native / Expo and native Swift. On-device features, StoreKit in-app purchases, and App Store submission, start to finish.",
+        "tags": ["iOS / Mobile"]
+      },
+      {
+        "name": "Payments integration",
+        "body": "Square, Stripe, and Apple StoreKit: checkout, subscriptions, one-time unlocks, and the back-office pieces around them.",
+        "tags": ["Payments"]
+      },
+      {
+        "name": "AI automation & agents",
+        "body": "Practical AI that does work: automated social, outbound, phone calls, documentation, and review. I run around 50 coordinated agents across my own businesses and can build the same for yours.",
+        "tags": ["AI / Automation"]
+      },
+      {
+        "name": "Brand, music & media",
+        "body": "I design the brand, write the copy, produce the music, and make the content. Useful when you want one person to carry a product and its story together.",
+        "tags": ["Brand / Media"]
+      },
+      {
+        "name": "Static sites & hosting",
+        "body": "Fast, data-driven static sites (Astro, Vite) deployed to shared hosting like Hostinger, with the content in one file you can edit yourself.",
+        "tags": ["Static sites & hosting"]
+      }
+    ]
+  },
+  "howToEngage": {
+    "sectionIndex": "02",
+    "title": "How to work with me",
+    "steps": [
+      { "step": "1", "name": "Tell me the problem", "body": "Email a short description of what you want built or fixed, and your deadline if you have one." },
+      { "step": "2", "name": "Scope & quote", "body": "I come back with a plan, a timeline, and a fixed-scope quote or an hourly estimate." },
+      { "step": "3", "name": "Build with check-ins", "body": "I build in the open with regular updates, so you see progress and can steer it." },
+      { "step": "4", "name": "Ship & hand off", "body": "You get the working product, the source, and clear docs so your team can run it." }
+    ]
+  },
+  "work": {
+    "sectionIndex": "03",
+    "title": "Selected work",
+    "intro": "A slice of what I've built. Status is labeled honestly: Live, In App Store review, Repo (source published), or Prototype.",
+    "statusLegendNote": "Do not relabel any project as 'Live' unless it has a working public URL.",
+    "projects": [
+      {
+        "slug": "passokay",
+        "name": "PassOkay",
+        "role": "Solo designer & developer",
+        "oneLiner": "Passport, visa, and ID photo app that checks your photo against the spec, entirely on your device.",
+        "detail": "You take or pick a photo, crop it to a document size, and get on-device checks for face, head size, centering, eyes, expression, tilt, lighting, and background. The photo never leaves the phone. A watermarked preview is free; one photo unlocks in HD for $4.99. The iPhone app uses React Native (Expo SDK 55) with native Swift Vision for the checks and StoreKit for the purchase. There's also a web version.",
+        "stack": ["Expo / React Native", "Swift (Vision)", "StoreKit", "Astro", "Node"],
+        "status": "In App Store review (submitted Oct 19, 2026)",
+        "tags": ["iOS / Mobile", "Payments", "Full-stack web"],
+        "links": [
+          { "label": "passokay.com", "href": "https://passokay.com" }
+        ],
+        "featured": true
+      },
+      {
+        "slug": "awkbeats",
+        "name": "AwkBeats",
+        "role": "Developer & brand owner",
+        "oneLiner": "Beat marketplace with lease tiers, sample packs, and booked sessions, built around Square checkout.",
+        "detail": "An online store for my own beats and a producer brand (Awkward J). Lease tiers, presets, sample packs, and booked sessions, with Square checkout and a download library. React/TypeScript front end, Express API, Supabase data. An iOS beat-store companion app is in progress.",
+        "stack": ["Vite / React", "Express", "Supabase", "Square"],
+        "status": "Live",
+        "tags": ["Full-stack web", "Payments", "Brand / Media"],
+        "links": [
+          { "label": "awkbeats.com", "href": "https://awkbeats.com" },
+          { "label": "GitHub", "href": "https://github.com/Awkward8787/AWKBEAT2026" }
+        ],
+        "featured": true
+      },
+      {
+        "slug": "ai-agents",
+        "name": "Autonomous AI operation (~50 agents)",
+        "role": "Architect & operator",
+        "oneLiner": "Around 50 purpose-built AI agents that run my brands, outreach, phone calls, documentation, and code review.",
+        "detail": "I run a coordinated set of roughly 50 AI agents that operate my businesses: social accounts across Instagram, X, YouTube, and TikTok; outbound prospecting; automated phone calls; project documentation; branding; knowledge bases; and code review, with an overseer agent watching the rest. It's a working example of practical AI automation and agent orchestration, and I can build the same pattern for a company.",
+        "stack": ["AI agents", "Automation", "Integrations"],
+        "status": "Running (private operation)",
+        "tags": ["AI / Automation"],
+        "links": [],
+        "featured": true
+      },
+      {
+        "slug": "loaded-sound",
+        "name": "Loaded Sound Management",
+        "role": "Developer",
+        "oneLiner": "Artist-management site with paid consultations, intake, bookings, and an admin back office.",
+        "detail": "A site for an independent artist-management business: public pages plus a back office for intake, bookings, CSV exports, and admin. Paid consultations run through Square. Built with Astro for the static side and a Node server for the dynamic parts.",
+        "stack": ["Astro", "Node", "Square"],
+        "status": "Live",
+        "tags": ["Full-stack web", "Payments"],
+        "links": [
+          { "label": "loadedsoundmgt.com", "href": "https://loadedsoundmgt.com" },
+          { "label": "GitHub", "href": "https://github.com/Awkward8787/Loaded-sound-management" }
+        ]
+      },
+      {
+        "slug": "coolbeanman",
+        "name": "Darkjuan Logic Games (Coolbeanman)",
+        "role": "Solo developer",
+        "oneLiner": "Free browser brain games for ages 10–16, with progress saved in the browser and optional donations.",
+        "detail": "A set of free logic and brain games aimed at kids and teens. Built as a Vite 6 + React 19 + TypeScript single-page app, with a small PHP endpoint for donations through Square and progress stored in the browser. Hosted on Hostinger.",
+        "stack": ["Vite 6", "React 19", "TypeScript", "PHP", "Square"],
+        "status": "Live",
+        "tags": ["Full-stack web", "Static sites & hosting"],
+        "links": [
+          { "label": "coolbeanman.com", "href": "https://coolbeanman.com" },
+          { "label": "GitHub", "href": "https://github.com/Awkward8787/Darkjuan-Logic-Games" }
+        ]
+      },
+      {
+        "slug": "rfc",
+        "name": "Restoration Fellowship Church",
+        "role": "Developer",
+        "oneLiner": "Public church site plus a staff dashboard for events, outreach, photos, and prayer and guest lists.",
+        "detail": "A public site and a private staff dashboard. Staff manage events, outreach, photos, guest and prayer lists, and finance records. Built with Vite, React, TypeScript, and Supabase.",
+        "stack": ["Vite / React", "TypeScript", "Supabase"],
+        "status": "Live",
+        "tags": ["Full-stack web", "Data / Backend"],
+        "links": [
+          { "label": "rfcvaldosta.com", "href": "https://www.rfcvaldosta.com/" },
+          { "label": "GitHub", "href": "https://github.com/Awkward8787/RFC" }
+        ]
+      },
+      {
+        "slug": "restaurant-demos",
+        "name": "Restaurant demo sites (x9)",
+        "role": "Developer",
+        "oneLiner": "Nine static restaurant sites driven by one JSON file per page, with an in-browser cart.",
+        "detail": "A set of nine static restaurant sites built from a shared template, each page driven by its own JSON file, with a browser-side cart. A good example of data-driven templating at volume, where content is editable without touching the layout.",
+        "stack": ["Astro", "JSON-driven", "Static"],
+        "status": "Live (demo)",
+        "tags": ["Static sites & hosting", "Full-stack web"],
+        "links": [
+          { "label": "Live demo", "href": "https://awkward8787.github.io/restaurant-demo-sites/" },
+          { "label": "GitHub", "href": "https://github.com/Awkward8787/restaurant-demo-sites" }
+        ]
+      },
+      {
+        "slug": "clutch",
+        "name": "CLUTCH",
+        "role": "Developer",
+        "oneLiner": "Hyper-local on-call labor marketplace for Valdosta: an iOS app and a web app on a shared backend.",
+        "detail": "A marketplace that connects people who need short-notice local labor with people who want the work. Built as an Expo / React Native iOS app and a Vite + React web app sharing a Firebase backend.",
+        "stack": ["Expo / React Native", "Vite / React", "Firebase"],
+        "status": "Repo (in development)",
+        "tags": ["iOS / Mobile", "Full-stack web"],
+        "links": [
+          { "label": "iOS repo", "href": "https://github.com/Awkward8787/clutch-ios" },
+          { "label": "Web repo", "href": "https://github.com/Awkward8787/Clutch-app" }
+        ]
+      },
+      {
+        "slug": "damage-report",
+        "name": "damage-report & damage-report-loop",
+        "role": "Author",
+        "oneLiner": "Published developer tools for Cursor Agent: evidence-based PR status reports and bounded fix-test loops.",
+        "detail": "Two open-source developer tools I published. damage-report generates evidence-based status reports for pull requests and git worktrees; damage-report-loop runs bounded audit-fix-test loops against GitHub pull requests. They reflect how I work: verify against evidence, review carefully, and keep changes bounded.",
+        "stack": ["Shell", "JavaScript", "GitHub / CI"],
+        "status": "Repo (published)",
+        "tags": ["Developer tools", "AI / Automation"],
+        "links": [
+          { "label": "damage-report", "href": "https://github.com/Awkward8787/damage-report" },
+          { "label": "damage-report-loop", "href": "https://github.com/Awkward8787/damage-report-loop" }
+        ]
+      },
+      {
+        "slug": "couch-dirty",
+        "name": "The Couch Is Dirty (podcast platform)",
+        "role": "Developer",
+        "oneLiner": "Self-hosted podcast platform with Postgres auth and roles, plus an iOS app.",
+        "detail": "A self-hosted podcast platform with Postgres-backed authentication, role-based access, and Docker deployment, alongside a native iOS app in Swift and a web version. Shows backend and devops range, not just front-end work.",
+        "stack": ["Vite / React", "Postgres", "Docker", "Swift"],
+        "status": "Repo (in development)",
+        "tags": ["Full-stack web", "Data / Backend", "iOS / Mobile"],
+        "links": [
+          { "label": "Platform repo", "href": "https://github.com/Awkward8787/The-Couch-Is-Dirty-Podcast-3" },
+          { "label": "iOS repo", "href": "https://github.com/Awkward8787/The-couch-is-dirty-app" }
+        ]
+      },
+      {
+        "slug": "convertible-mortgage",
+        "name": "Convertible Mortgage Calculator",
+        "role": "Developer",
+        "oneLiner": "Real-time mortgage comparison with convertible-ARM scenarios and a printable amortization schedule.",
+        "detail": "A focused calculator that models convertible adjustable-rate mortgage scenarios in real time and prints a clean amortization schedule. A small, self-contained piece of front-end engineering.",
+        "stack": ["Vite / React", "TypeScript"],
+        "status": "Repo",
+        "tags": ["Full-stack web"],
+        "links": [
+          { "label": "GitHub", "href": "https://github.com/Awkward8787/Convertible-mortgage-calculator" }
+        ]
+      },
+      {
+        "slug": "saythisrapthat",
+        "name": "SayThisRapThat",
+        "role": "Developer",
+        "oneLiner": "AI-assisted rap and trap songwriting with phonetic analysis and song structure.",
+        "detail": "A songwriting tool that uses phonetic analysis to help with rhyme and flow and lays out song structure. Built in Python with Docker. A crossover of my music and engineering sides.",
+        "stack": ["Python", "Docker", "AI"],
+        "status": "Repo",
+        "tags": ["AI / Automation", "Brand / Media"],
+        "links": [
+          { "label": "GitHub", "href": "https://github.com/Awkward8787/SayThisRapThat" }
+        ]
+      },
+      {
+        "slug": "formflow-db",
+        "name": "FormFlow DB",
+        "role": "Developer",
+        "oneLiner": "Database-driven PDF autofill: a FastAPI service with a Next.js front end.",
+        "detail": "A tool that fills PDF forms from stored data, built as a Python/FastAPI API with a Next.js web app, containerized with Docker.",
+        "stack": ["FastAPI", "Next.js", "Docker"],
+        "status": "Repo",
+        "tags": ["Data / Backend", "Full-stack web"],
+        "links": [
+          { "label": "GitHub", "href": "https://github.com/Awkward8787/formflow-db" }
+        ]
+      },
+      {
+        "slug": "ai-image-tools",
+        "name": "AI image tools (Coverly, BustDown, PeelPix)",
+        "role": "Developer",
+        "oneLiner": "Three image apps built on generative models: mixtape covers, style transforms, and a plain-language photo editor.",
+        "detail": "A small family of AI image apps. Coverly generates mixtape cover art, BustDown turns a photo into viral-style edits, and PeelPix edits and restores photos from natural-language instructions. All built with Vite, React, and TypeScript on Gemini image models.",
+        "stack": ["Vite / React", "TypeScript", "Gemini"],
+        "status": "Repo",
+        "tags": ["AI / Automation", "Brand / Media"],
+        "links": [
+          { "label": "Coverly", "href": "https://github.com/Awkward8787/Coverly-" },
+          { "label": "BustDown", "href": "https://github.com/Awkward8787/BustDown-App" },
+          { "label": "PeelPix", "href": "https://github.com/Awkward8787/Peel-Pix" }
+        ]
+      },
+      {
+        "slug": "vibe-virtue",
+        "name": "Vibe Virtue",
+        "role": "Founder & developer",
+        "oneLiner": "My consulting umbrella: a live consulting site plus a tech-consulting app for local businesses.",
+        "detail": "Vibe Virtue is the umbrella for my independent work. It includes a live consulting site and a tech-consulting app and knowledge base for local businesses. Vibe Virtue Enterprise LLC is also planning educational and adventure games for PlayStation 5; that work is in the planning stage.",
+        "stack": ["Vite / React", "TypeScript", "Supabase"],
+        "status": "Live (consulting site) · games planned",
+        "tags": ["Full-stack web", "Brand / Media"],
+        "links": [
+          { "label": "vibevirtue.com", "href": "https://vibevirtue.com" }
+        ]
+      }
+    ],
+    "moreWorkNote": "More repos on GitHub, including VenueHelix (event ticketing), Bravien Logistics (logistics SaaS), Ryan for Georgia (campaign site), Offbeat TV (Roku channel), and others.",
+    "clientWork": {
+      "note": "TODO: confirm it's OK to name this client publicly.",
+      "item": {
+        "name": "Jones Designs (client web work)",
+        "detail": "Design audit and web/app work for Jones Designs (Robert Jones).",
+        "links": [ { "label": "jonesdesigns.org", "href": "https://jonesdesigns.org" } ]
+      }
+    }
+  },
+  "skills": {
+    "sectionIndex": "04",
+    "title": "Skills",
+    "intro": "Searchable and filterable with the rest of the site.",
+    "groups": [
+      {
+        "name": "Languages",
+        "tags": [],
+        "items": ["TypeScript / JavaScript", "Python", "Swift", "HTML / CSS", "SQL", "Shell / Bash", "PHP", "BrightScript"]
+      },
+      {
+        "name": "Front end",
+        "tags": ["Full-stack web", "Static sites & hosting"],
+        "items": ["React", "React Native / Expo", "Vite", "Astro", "Next.js", "Responsive & accessible UI"]
+      },
+      {
+        "name": "Back end & data",
+        "tags": ["Full-stack web", "Data / Backend"],
+        "items": ["Node / Express", "FastAPI", "Supabase", "PostgreSQL", "Firebase", "Appwrite", "REST APIs", "Auth & role-based access"]
+      },
+      {
+        "name": "Mobile",
+        "tags": ["iOS / Mobile"],
+        "items": ["iOS (Swift)", "Expo / React Native", "Apple Vision (on-device)", "StoreKit in-app purchases", "App Store submission"]
+      },
+      {
+        "name": "Payments",
+        "tags": ["Payments"],
+        "items": ["Square", "Stripe", "Apple StoreKit"]
+      },
+      {
+        "name": "AI & automation",
+        "tags": ["AI / Automation"],
+        "items": ["AI agents & orchestration", "Workflow automation", "Generative image & text models", "Automated outreach & content"]
+      },
+      {
+        "name": "Infra & tooling",
+        "tags": ["Developer tools", "Static sites & hosting"],
+        "items": ["Docker", "Git / GitHub", "CI & PR review tooling", "Hostinger / shared hosting", "DNS & domains"]
+      },
+      {
+        "name": "Creative",
+        "tags": ["Brand / Media"],
+        "items": ["Music production (Pro Tools)", "Brand & visual design", "Copywriting", "Video & audio production"]
+      },
+      {
+        "name": "IT & support",
+        "tags": [],
+        "items": ["Tier-1 technical support", "Hardware & software troubleshooting", "Networking fundamentals", "Cybersecurity fundamentals"]
+      }
+    ]
+  },
+  "experience": {
+    "sectionIndex": "05",
+    "title": "Experience",
+    "roles": [
+      {
+        "title": "Independent Software Developer & Creator (contract)",
+        "org": "Vibe Virtue Enterprise",
+        "location": "Valdosta, GA",
+        "start": "2009",
+        "end": "Present",
+        "bullets": [
+          "Design, build, and ship web and iOS products end to end: front end, back end, payments, brand, and the automation behind them.",
+          "Submitted an iPhone app (PassOkay) to the App Store with on-device Apple Vision checks and StoreKit in-app purchase.",
+          "Integrated real payments across projects with Square, Stripe, and StoreKit.",
+          "Built and operate roughly 50 coordinated AI agents that run social, outreach, phone calls, documentation, and code review.",
+          "Published open-source developer tools for pull-request review and automated fix-test loops."
+        ],
+        "tags": ["Full-stack web", "iOS / Mobile", "Payments", "AI / Automation", "Developer tools", "Brand / Media"]
+      },
+      {
+        "title": "Technical Support Advisor, Apple Support",
+        "org": "Teleperformance",
+        "location": "Remote",
+        "start": "Dec 2025",
+        "end": "Present",
+        "bullets": [
+          "Provide customer-facing technical support for Apple products: diagnose issues, guide customers through fixes, and document cases.",
+          "Explain technical steps in plain language and hand off unresolved issues with clear context."
+        ],
+        "note": "TODO: confirm wording and dates (resume says 'Advisor Level 1, Apple Support department, via Teleperformance, Dec 2025–Present')."
+      }
+    ],
+    "earlierCareerNote": "Earlier roles include healthcare patient transport (SGMC, 2021–2025) and logistics and retail positions. Available on the full résumé."
+  },
+  "education": {
+    "sectionIndex": "06",
+    "title": "Education & training",
+    "items": [
+      {
+        "credential": "A.A., Audio & Video Production",
+        "org": "The Art Institute of Atlanta",
+        "year": "2013"
+      },
+      {
+        "credential": "Cybersecurity studies (Technical Certificate of Credit, in progress)",
+        "org": "Wiregrass Georgia Technical College",
+        "year": ""
+      },
+      {
+        "credential": "Google Cybersecurity Certificate coursework (6 of 8 courses)",
+        "org": "Coursera",
+        "year": "2024"
+      },
+      {
+        "credential": "Pro Tools / Digidesign certification (audio)",
+        "org": "",
+        "year": ""
+      }
+    ]
+  },
+  "contact": {
+    "sectionIndex": "07",
+    "title": "Hire me",
+    "pitch": "I'm available for contract software work: web apps, iOS apps, payments, AI automation, or the brand and media around them. I'm also open to the right full-time role. Tell me what you're trying to build.",
+    "availability": "TODO: add availability (for example, hours per week, start date).",
+    "rate": "TODO: add a rate or 'rate on request'.",
+    "email": "ajnthony87@gmail.com",
+    "emailNote": "",
+    "phone": "",
+    "phoneNote": "TODO: a phone number is intentionally omitted from this public site. Add one here only if you want it shown.",
+    "primaryCta": { "label": "Email me about a project", "href": "mailto:ajnthony87@gmail.com" },
+    "secondaryCta": { "label": "Download résumé", "href": "/resume.pdf" },
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/Awkward8787" },
+      { "label": "Instagram (music)", "href": "https://www.instagram.com/awkwardjones" }
+    ]
+  },
+  "resumeView": {
+    "enable": true,
+    "note": "Build a print/ATS-friendly résumé view from this content (single column, selectable text) and generate /resume.pdf for the download links.",
+    "summary": "Independent software developer and creator based in Valdosta, GA. I build web and iOS products end to end, including payments and AI automation, and prefer contract work. Recent work includes an iPhone app submitted to the App Store (PassOkay) and a beat marketplace with Square checkout (AwkBeats)."
+  },
+  "footer": {
+    "tagline": "Built and maintained by Anthony Jones.",
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/Awkward8787" },
+      { "label": "Résumé", "href": "/resume.pdf" },
+      { "label": "Email", "href": "mailto:ajnthony87@gmail.com" }
+    ]
+  }
+}
