@@ -1,0 +1,37 @@
+{
+  "note": "Hidden on the site until the TODO text in content.json is replaced. The public email is confirmed and is not listed here.",
+  "items": [
+    {
+      "path": "meta.ogImage",
+      "text": "TODO: add an Open Graph image (1200x630) to /assets and set its path here"
+    },
+    {
+      "path": "meta.linkedin",
+      "text": "TODO: add LinkedIn URL if you want it linked"
+    },
+    {
+      "path": "hero.photo",
+      "text": "TODO: add a professional headshot to /assets and set its path here (optional; initials shown until then)"
+    },
+    {
+      "path": "work.clientWork.note",
+      "text": "TODO: confirm it's OK to name this client publicly."
+    },
+    {
+      "path": "experience.roles[1].note",
+      "text": "TODO: confirm wording and dates (resume says 'Advisor Level 1, Apple Support department, via Teleperformance, Dec 2025–Present')."
+    },
+    {
+      "path": "contact.availability",
+      "text": "TODO: add availability (for example, hours per week, start date)."
+    },
+    {
+      "path": "contact.rate",
+      "text": "TODO: add a rate or 'rate on request'."
+    },
+    {
+      "path": "contact.phoneNote",
+      "text": "TODO: a phone number is intentionally omitted from this public site. Add one here only if you want it shown."
+    }
+  ]
+}

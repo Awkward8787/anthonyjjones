@@ -1,0 +1,13 @@
+{
+  "name": "anthonyjjones",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs && node scripts/render.mjs",
+    "serve": "node scripts/serve.mjs",
+    "start": "npm run build && npm run serve"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.15.0"
+  }
+}
