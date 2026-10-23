@@ -1,4 +1,14 @@
+<p align="center">
+  <img src="docs/banner.png" alt="Anthony Jones" width="100%">
+</p>
+
 # Anthony Jones
+
+**Personal site for anthonyjjones.com — searchable résumé and contract portfolio.**
+
+[![License: All Rights Reserved](https://img.shields.io/badge/license-all%20rights%20reserved-lightgrey)](#license)
+![Node](https://img.shields.io/badge/Node-20%2B-339933?logo=nodedotjs&logoColor=white)
+![Static site](https://img.shields.io/badge/static%20site-0B0C0E)
 
 Personal site for [anthonyjjones.com](https://anthonyjjones.com). It is a searchable résumé and contract portfolio: services, selected work, skills, experience, and a plain résumé with a PDF download.
 
@@ -78,3 +88,8 @@ The site expects to be served from the domain root (`/assets/...`, `/resume.pdf`
 | `dist/og.png` | Open Graph image, until `meta.ogImage` points at a replacement |
 | `dist/favicon.svg`, `favicon.png`, `favicon.ico`, `apple-touch-icon.png` | Icons |
 | `dist/assets/` | CSS, JS, fonts |
+
+
+## License
+
+All rights reserved.
