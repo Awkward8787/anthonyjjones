@@ -59,7 +59,7 @@ Without JavaScript the full content is still in the page. Filtering is the enhan
 
 ## Résumé
 
-`/resume.html` is a single column of selectable text for printing and for applicant-tracking systems. Print styles drop the site header, navigation, and theme. `dist/resume.pdf` is generated from that page during `npm run build`.
+`/resume.html` is a single column of selectable text for printing and for applicant-tracking systems. Print styles drop the site header, navigation, and theme. If `src/resume.pdf` exists, `npm run build` copies it to `dist/resume.pdf` as the downloadable résumé (keep it free of a phone number; this repo is public). Without it, the PDF is generated from `/resume.html`.
 
 ## Theme
 

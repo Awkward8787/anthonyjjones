@@ -398,7 +398,7 @@ function hero() {
   const photo = show(data.hero.photo);
   const photoOk = photo && /^(?:\/|https?:|\.{1,2}\/|assets\/)/.test(photo);
   const mark = photoOk
-    ? `<div class="mark"><img src="${esc(safeUrl(photo) || photo)}" alt=""></div>`
+    ? `<div class="mark mark-photo"><picture>${photo.endsWith(".webp") ? `<source srcset="${esc(photo)}" type="image/webp">` : ""}<img src="${esc(photo.replace(/\.webp$/, ".jpg"))}" alt="${esc(data.hero.name)}" width="600" height="600" decoding="async" fetchpriority="high"></picture></div>`
     : `<div class="mark" aria-hidden="true"><span>${esc(data.hero.monogram || "AJ")}</span></div>`;
   const lines = nameLines(data.hero.name)
     .map((line) => `<span>${esc(line)}</span>`)
@@ -906,6 +906,13 @@ fs.writeFileSync(
   fontFace + themeCss + fs.readFileSync(path.join(root, "src", "site.css"), "utf8"),
 );
 fs.copyFileSync(path.join(root, "src", "site.js"), path.join(dist, "assets", "site.js"));
+const imagesDir = path.join(root, "src", "images");
+if (fs.existsSync(imagesDir)) {
+  fs.mkdirSync(path.join(dist, "assets", "images"), { recursive: true });
+  for (const file of fs.readdirSync(imagesDir)) {
+    fs.copyFileSync(path.join(imagesDir, file), path.join(dist, "assets", "images", file));
+  }
+}
 for (const file of fs.readdirSync(path.join(root, "src", "fonts"))) {
   fs.copyFileSync(path.join(root, "src", "fonts", file), path.join(dist, "assets", "fonts", file));
 }

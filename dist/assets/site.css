@@ -461,6 +461,24 @@ kbd,
   object-fit: cover;
 }
 
+.mark-photo {
+  overflow: hidden;
+  border-radius: 18px;
+  background-image: none;
+  padding: 0;
+}
+
+.mark-photo picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.mark-photo img {
+  display: block;
+  object-position: 50% 30%;
+}
+
 .searchband {
   position: sticky;
   top: 4.25rem;
@@ -1181,5 +1199,12 @@ html.js .case-toggle {
   *::after {
     animation: none !important;
     transition: none !important;
+  }
+}
+
+@media (max-width: 860px) {
+  .mark-photo {
+    width: 120px;
+    border-radius: 14px;
   }
 }
