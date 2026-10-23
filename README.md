@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.png" alt="Anthony Jones" width="100%">
+  <img src="assets/banner.png" alt="Anthony Jones" width="100%">
 </p>
 
 # Anthony Jones
@@ -13,6 +13,20 @@
 Personal site for [anthonyjjones.com](https://anthonyjjones.com). It is a searchable résumé and contract portfolio: services, selected work, skills, experience, and a plain résumé with a PDF download.
 
 The pages are static files. Edit `content.json`, rebuild, and upload the contents of `dist/` to Hostinger `public_html`. Nothing here deploys on its own.
+
+
+## How it works
+
+```mermaid
+flowchart LR
+  A[content.json] --> B[npm run build]
+  B --> C[dist/ static HTML CSS JS]
+  C --> D[Hostinger public_html]
+  D --> E[anthonyjjones.com]
+  B --> F[resume.pdf + og.png]
+```
+
+Edit copy and theme in `content.json`, rebuild, then upload the contents of `dist/`. The browser search/filter layer runs only on the client.
 
 ## Edit the site
 
