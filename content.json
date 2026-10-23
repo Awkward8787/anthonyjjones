@@ -13,8 +13,7 @@
     "country": "US",
     "jobTitle": "Software Developer (contract) & Creator",
     "sameAs": [
-      "https://github.com/Awkward8787",
-      "https://www.instagram.com/awkwardjones"
+      "https://github.com/Awkward8787"
     ],
     "linkedin": "https://www.linkedin.com/in/anthonyjaamaljones/",
     "jsonLdType": "Person"
@@ -231,7 +230,7 @@
         "name": "Autonomous AI operation (~50 agents)",
         "role": "Architect & operator",
         "oneLiner": "Around 50 purpose-built AI agents that run my brands, outreach, phone calls, documentation, and code review.",
-        "detail": "I run a coordinated set of roughly 50 AI agents that operate my businesses: social accounts across Instagram, X, YouTube, and TikTok; outbound prospecting; automated phone calls; project documentation; branding; knowledge bases; and code review, with an overseer agent watching the rest. It's a working example of practical AI automation and agent orchestration, and I can build the same pattern for a company.",
+        "detail": "I run a coordinated set of roughly 50 AI agents that operate my businesses: social accounts across X, YouTube, TikTok, and other platforms; outbound prospecting; automated phone calls; project documentation; branding; knowledge bases; and code review, with an overseer agent watching the rest. It's a working example of practical AI automation and agent orchestration, and I can build the same pattern for a company.",
         "stack": [
           "AI agents",
           "Automation",
@@ -922,10 +921,6 @@
       {
         "label": "GitHub",
         "href": "https://github.com/Awkward8787"
-      },
-      {
-        "label": "Instagram (music)",
-        "href": "https://www.instagram.com/awkwardjones"
       }
     ]
   },
