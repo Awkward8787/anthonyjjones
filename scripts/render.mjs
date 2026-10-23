@@ -68,6 +68,10 @@ try {
   await raster(180, "apple-touch-icon.png");
   fs.writeFileSync(path.join(dist, "favicon.ico"), icoFromPng(png32, 32));
 
+  const curatedPdf = path.join(path.dirname(dist), "src", "resume.pdf");
+  if (fs.existsSync(curatedPdf)) {
+    fs.copyFileSync(curatedPdf, path.join(dist, "resume.pdf"));
+  } else {
   await page.setViewport({ width: 816, height: 1056, deviceScaleFactor: 1 });
   await page.goto(`${server.url}/resume.html`, { waitUntil: "networkidle0" });
   await page.evaluate(() => document.fonts.ready);
@@ -80,6 +84,7 @@ try {
     displayHeaderFooter: false,
     margin: { top: "0.6in", bottom: "0.6in", left: "0.65in", right: "0.65in" },
   });
+  }
 
   fs.rmSync(path.join(dist, "og-card.html"), { force: true });
   console.log("Wrote og.png, favicon.png, apple-touch-icon.png, favicon.ico, resume.pdf");
