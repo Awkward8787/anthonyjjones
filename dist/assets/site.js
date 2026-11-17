@@ -162,6 +162,7 @@
         if (visibleByKind.skill) parts.push(plural(visibleByKind.skill, "skill", "skills"));
         if (visibleByKind.role) parts.push(plural(visibleByKind.role, "role", "roles"));
         if (visibleByKind.study) parts.push(plural(visibleByKind.study, "program", "programs"));
+        if (visibleByKind.certificate) parts.push(plural(visibleByKind.certificate, "certificate group", "certificate groups"));
         countEl.textContent = parts.join(", ");
       }
     }

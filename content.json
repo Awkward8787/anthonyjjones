@@ -890,8 +890,85 @@
       }
     ]
   },
-  "contact": {
+  "certifications": {
     "sectionIndex": "07",
+    "title": "Certifications",
+    "intro": "Completed in 2026. Forage items are virtual job simulations, not employment or official company certifications.",
+    "groups": [
+      {
+        "name": "Kaggle Learn",
+        "year": "2026",
+        "note": "",
+        "items": [
+          {
+            "name": "Python",
+            "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/python"
+          },
+          {
+            "name": "Pandas",
+            "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/pandas"
+          },
+          {
+            "name": "Data Visualization",
+            "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/data-visualization"
+          },
+          {
+            "name": "Intro to SQL",
+            "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/intro-to-sql"
+          },
+          {
+            "name": "Data Cleaning",
+            "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/data-cleaning"
+          },
+          {
+            "name": "Intro to Machine Learning",
+            "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/intro-to-machine-learning"
+          },
+          {
+            "name": "Feature Engineering",
+            "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/feature-engineering"
+          }
+        ]
+      },
+      {
+        "name": "Forage Job Simulations",
+        "year": "2026",
+        "note": "Virtual job simulations completed through Forage.",
+        "items": [
+          {
+            "name": "Goldman Sachs Operations",
+            "url": "https://www.theforage.com/completion-certificates/MBA4MnZTNFEoJZGnk/wNge9cjzNTXD2acrv_MBA4MnZTNFEoJZGnk_6af8cfbb36af9db3eb1c2d4b_1794804111591_completion_certificate.pdf"
+          },
+          {
+            "name": "Bank of America Global Markets Sales & Trading",
+            "url": "https://www.theforage.com/completion-certificates/fMCqmt8qR4G85Puue/rKCBL7y5yKgzDGZmR_fMCqmt8qR4G85Puue_6af8cfbb36af9db3eb1c2d4b_1794907767301_completion_certificate.pdf"
+          },
+          {
+            "name": "Deloitte Australia Cyber",
+            "url": "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_6af8cfbb36af9db3eb1c2d4b_1794950113237_completion_certificate.pdf"
+          },
+          {
+            "name": "Mastercard Cybersecurity",
+            "url": "https://www.theforage.com/completion-certificates/mfxGwGDp6WkQmtmTf/vcKAB5yYAgvemepGQ_mfxGwGDp6WkQmtmTf_6af8cfbb36af9db3eb1c2d4b_1794950667321_completion_certificate.pdf"
+          },
+          {
+            "name": "Tata (TCS) Cybersecurity Analyst",
+            "url": "https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_6af8cfbb36af9db3eb1c2d4b_1794951922698_completion_certificate.pdf"
+          },
+          {
+            "name": "AIG Shields Up: Cybersecurity",
+            "url": "https://www.theforage.com/completion-certificates/4nAmAbTbHbnGMNSyo/2ZFnEGEDKTQMtEv9C_4nAmAbTbHbnGMNSyo_6af8cfbb36af9db3eb1c2d4b_1794952508409_completion_certificate.pdf"
+          },
+          {
+            "name": "Deloitte Australia Data Analytics",
+            "url": "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_6af8cfbb36af9db3eb1c2d4b_1794953331506_completion_certificate.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "sectionIndex": "08",
     "title": "Hire me",
     "pitch": "I'm available for contract software work: web apps, iOS apps, payments, AI automation, or the brand and media around them. I'm also open to the right full-time role. Tell me what you're trying to build.",
     "availability": "TODO: add availability (for example, hours per week, start date).",
