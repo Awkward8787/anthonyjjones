@@ -8,7 +8,7 @@ const dist = path.join(root, "dist");
 const contentPath = path.join(root, "content.json");
 
 const PHONE_RE =
-  /(?:\+?1[\s.-]*)?(?:\(\s*\d{3}\s*\)|\d{3})[\s.-]*\d{3}[\s.-]*\d{4}/;
+  /(?<![\d])(?:\+?1[\s.-]*)?(?:\(\s*\d{3}\s*\)|\d{3})[\s.-]*\d{3}[\s.-]*\d{4}(?![\d])/;
 
 const data = JSON.parse(fs.readFileSync(contentPath, "utf8"));
 const raw = fs.readFileSync(contentPath, "utf8");
@@ -640,6 +640,40 @@ function educationSection() {
   </section>`;
 }
 
+
+function certificationsSection() {
+  const groups = (data.certifications?.groups || [])
+    .map((group) => {
+      const links = (group.items || [])
+        .map((item) => {
+          const href = safeUrl(item.url);
+          if (!href || !show(item.name)) return "";
+          return `<li><a class="text-link" href="${esc(href)}" rel="noopener noreferrer">${esc(item.name)}</a></li>`;
+        })
+        .filter(Boolean)
+        .join("");
+      const note = show(group.note);
+      const meta = joinMeta([group.year, note]);
+      const blob = [group.name, group.year, note, ...(group.items || []).map((item) => item.name)];
+      return `<article class="study cert-group"${searchAttrs("certificate", [], blob)}>
+        <h3>${esc(show(group.name))}</h3>
+        <div>
+          ${meta ? `<p class="meta">${esc(meta)}</p>` : ""}
+          ${links ? `<ul class="cert-list">${links}</ul>` : ""}
+        </div>
+      </article>`;
+    })
+    .join("");
+  if (!groups) return "";
+  return `<section class="section" id="certifications" data-filter-section>
+    <div class="wrap">
+      ${sectionHead(data.certifications.sectionIndex, data.certifications.title, show(data.certifications.intro))}
+      <div class="studies">${groups}</div>
+      <p class="empty" data-empty hidden>Nothing in this section matches.</p>
+    </div>
+  </section>`;
+}
+
 function contactSection() {
   const availability = show(data.contact.availability);
   const rate = show(data.contact.rate);
@@ -677,6 +711,7 @@ function homePage() {
     { index: data.skills.sectionIndex, html: skillsSection() },
     { index: data.experience.sectionIndex, html: experienceSection() },
     { index: data.education.sectionIndex, html: educationSection() },
+    { index: data.certifications.sectionIndex, html: certificationsSection() },
     { index: data.contact.sectionIndex, html: contactSection() },
   ].sort((a, b) => String(a.index).localeCompare(String(b.index), undefined, { numeric: true }));
 
@@ -803,6 +838,21 @@ function resumePage() {
       return `<p><strong>${esc(show(item.credential))}</strong>${meta ? ` <span class="muted">${esc(meta)}</span>` : ""}</p>`;
     })
     .join("");
+  const certifications = (data.certifications?.groups || [])
+    .map((group) => {
+      const links = (group.items || [])
+        .map((item) => {
+          const href = safeUrl(item.url);
+          if (!href || !show(item.name)) return "";
+          return `<a href="${esc(href)}">${esc(item.name)}</a>`;
+        })
+        .filter(Boolean)
+        .join("; ");
+      const meta = joinMeta([group.year]);
+      const note = show(group.note);
+      return `<p><strong>${esc(show(group.name))}</strong>${meta ? ` <span class="muted">${esc(meta)}</span>` : ""}${note ? ` <span class="muted">${esc(note)}</span>` : ""}</p><p>${links}</p>`;
+    })
+    .join("");
   const earlier = show(data.experience.earlierCareerNote);
   const availability = show(data.contact.availability);
   const rate = show(data.contact.rate);
@@ -836,6 +886,8 @@ function resumePage() {
       ${projects}
       <h2>Education</h2>
       ${education}
+      <h2>Certifications</h2>
+      ${certifications}
       ${extra.length ? `<h2>Availability</h2>${extra.map((line) => `<p>${esc(line)}</p>`).join("")}` : ""}
     </article>
   </div>`;

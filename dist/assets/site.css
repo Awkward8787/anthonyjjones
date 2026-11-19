@@ -659,6 +659,21 @@ section[id] {
   font-size: 0.85rem;
 }
 
+.cert-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0;
+  list-style: none;
+  padding: 0;
+  margin: 0.55rem 0 0;
+}
+
+.cert-list li:not(:last-child)::after {
+  content: " · ";
+  color: var(--muted);
+}
+
+
 .tagline,
 .when {
   font-size: 0.75rem;
