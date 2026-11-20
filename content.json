@@ -5,7 +5,7 @@
     "legalName": "Anthony Jaamal Jones",
     "domain": "anthonyjjones.com",
     "url": "https://anthonyjjones.com",
-    "title": "Anthony Jones — Contract Software Developer & Creator",
+    "title": "Anthony Jones \u2014 Contract Software Developer & Creator",
     "description": "I design, build, and ship software: web apps, iOS apps, payments, and the AI automation that runs behind them. Available for contract work from Valdosta, GA.",
     "ogImage": "TODO: add an Open Graph image (1200x630) to /assets and set its path here",
     "locality": "Valdosta",
@@ -43,7 +43,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Valdosta, GA · available for contract work",
+    "eyebrow": "Valdosta, GA \u00b7 available for contract work",
     "name": "Anthony Jones",
     "headline": "I design, build, and ship software: web, mobile, and the AI that runs behind it.",
     "subhead": "Self-directed developer and creator. I take an idea to a working product: the front end, the back end, the payments, the brand, and the automation that keeps it running. I prefer contract work and I'm open to the right full-time role.",
@@ -62,14 +62,14 @@
       "href": "#work"
     },
     "resumeCta": {
-      "label": "Download résumé",
+      "label": "Download r\u00e9sum\u00e9",
       "href": "/resume.pdf"
     },
     "monogram": "AJ",
     "photo": "/assets/images/anthony-jones-headshot.webp"
   },
   "search": {
-    "placeholder": "Search projects, skills, and experience…",
+    "placeholder": "Search projects, skills, and experience\u2026",
     "hint": "Press / or Cmd-K to search",
     "emptyState": "No matches. Try a tag like iOS, payments, or AI."
   },
@@ -274,7 +274,7 @@
         "slug": "coolbeanman",
         "name": "Darkjuan Logic Games (Coolbeanman)",
         "role": "Solo developer",
-        "oneLiner": "Free browser brain games for ages 10–16, with progress saved in the browser and optional donations.",
+        "oneLiner": "Free browser brain games for ages 10\u201316, with progress saved in the browser and optional donations.",
         "detail": "A set of free logic and brain games aimed at kids and teens. Built as a Vite 6 + React 19 + TypeScript single-page app, with a small PHP endpoint for donations through Square and progress stored in the browser. Hosted on Hostinger.",
         "stack": [
           "Vite 6",
@@ -675,15 +675,15 @@
           "TypeScript",
           "Supabase"
         ],
-        "status": "Live (consulting site) · games planned",
+        "status": "Live (consulting site) \u00b7 games planned",
         "tags": [
           "Full-stack web",
           "Brand / Media"
         ],
         "links": [
           {
-            "label": "vibevirtue.com",
-            "href": "https://vibevirtue.com"
+            "label": "vibevirtuesolutions.com",
+            "href": "https://vibevirtuesolutions.com/"
           }
         ]
       }
@@ -864,10 +864,10 @@
           "Provide customer-facing technical support for Apple products: diagnose issues, guide customers through fixes, and document cases.",
           "Explain technical steps in plain language and hand off unresolved issues with clear context."
         ],
-        "note": "TODO: confirm wording and dates (resume says 'Advisor Level 1, Apple Support department, via Teleperformance, Dec 2025–Present')."
+        "note": "TODO: confirm wording and dates (resume says 'Advisor Level 1, Apple Support department, via Teleperformance, Dec 2025\u2013Present')."
       }
     ],
-    "earlierCareerNote": "Earlier roles include healthcare patient transport (SGMC, 2021–2025) and logistics and retail positions. Available on the full résumé."
+    "earlierCareerNote": "Earlier roles include healthcare patient transport (SGMC, 2021\u20132025) and logistics and retail positions. Available on the full r\u00e9sum\u00e9."
   },
   "education": {
     "sectionIndex": "06",
@@ -927,6 +927,30 @@
           {
             "name": "Feature Engineering",
             "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/feature-engineering"
+          },
+          {
+            "name": "Intermediate Machine Learning",
+            "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/intermediate-machine-learning"
+          },
+          {
+            "name": "Intro to Deep Learning",
+            "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/intro-to-deep-learning"
+          },
+          {
+            "name": "Computer Vision",
+            "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/computer-vision"
+          },
+          {
+            "name": "Machine Learning Explainability",
+            "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/machine-learning-explainability"
+          },
+          {
+            "name": "Intro to AI Ethics",
+            "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/intro-to-ai-ethics"
+          },
+          {
+            "name": "Intro to Game AI and Reinforcement Learning",
+            "url": "https://www.kaggle.com/learn/certification/anthonyjaamaljones/intro-to-game-ai-and-reinforcement-learning"
           }
         ]
       },
@@ -962,6 +986,10 @@
           {
             "name": "Deloitte Australia Data Analytics",
             "url": "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_6af8cfbb36af9db3eb1c2d4b_1794953331506_completion_certificate.pdf"
+          },
+          {
+            "name": "Walmart USA Advanced Software Engineering",
+            "url": "https://www.theforage.com/completion-certificates/prBZoAihniNijyD6d/oX6f9BbCL9kJDJzfg_prBZoAihniNijyD6d_6af8cfbb36af9db3eb1c2d4b_1795134182510_completion_certificate.pdf"
           }
         ]
       }
@@ -982,7 +1010,7 @@
       "href": "mailto:ajnthony87@gmail.com"
     },
     "secondaryCta": {
-      "label": "Download résumé",
+      "label": "Download r\u00e9sum\u00e9",
       "href": "/resume.pdf"
     },
     "links": [
@@ -993,12 +1021,16 @@
       {
         "label": "GitHub",
         "href": "https://github.com/Awkward8787"
+      },
+      {
+        "label": "The Unauthorized, my urban fantasy books",
+        "href": "https://theunauthorizedbooks.com/"
       }
     ]
   },
   "resumeView": {
     "enable": true,
-    "note": "Build a print/ATS-friendly résumé view from this content (single column, selectable text) and generate /resume.pdf for the download links.",
+    "note": "Build a print/ATS-friendly r\u00e9sum\u00e9 view from this content (single column, selectable text) and generate /resume.pdf for the download links.",
     "summary": "Independent software developer and creator based in Valdosta, GA. I build web and iOS products end to end, including payments and AI automation, and prefer contract work. Recent work includes an iPhone app submitted to the App Store (PassOkay) and a beat marketplace with Square checkout (AwkBeats)."
   },
   "footer": {
@@ -1009,7 +1041,7 @@
         "href": "https://github.com/Awkward8787"
       },
       {
-        "label": "Résumé",
+        "label": "R\u00e9sum\u00e9",
         "href": "/resume.pdf"
       },
       {
